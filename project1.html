@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project 1: Portfolio</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,100" rel="stylesheet">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+			<!-- The JS runs the Modals, below -->
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="col-md-3 fontawesome-coffee logo"></div>
+					<div class="col-md-9 text-right text-uppercase title">
+						<h1 class="text-thin title-super">Dennis Mullen</h1>
+						<h4>Front-end Student</h4>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+					</div>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-md-12">
+					<picture>
+						<source media="(min-width: 750px)" srcset="images/ut-1200.jpg">
+						<source media="(min-width: 500px)" srcset="images/ut-750.jpg">
+						<source media="(max-width: 499px)" srcset="images/ut-500.jpg">
+						<img src="images/ut-1200.jpg" class="img-responsive" alt="Football Game Tilt Shift">
+					</picture>
+				</div>
+			</div>
+			<section>
+				<div class="row featured-work">
+					<div class="col-md-12">
+						<h2 class="text-muted">Featured Work</h2>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4 feature-box">
+						<picture>
+							<source media="(min-width: 992px)" srcset="images/mhcc-500.jpg">
+							<source media="(min-width: 500px)" srcset="images/mhcc-750.jpg">
+							<source media="(max-width: 499px)" srcset="images/mhcc-500.jpg">
+							<img src="images/mhcc-750.jpg" class="img-responsive" alt="Three crosses at sunrise" data-toggle="modal" data-target="#project1">
+							<!-- data-toggle and data target activate the neat Modal effect -->
+						</picture>
+						<h3 class="text-uppercase">Church Web Site</h3>
+						<p><a href="http://morrisonhill.com">morrisonhill.com</a></p>
+					</div>
+					<div class="col-md-4 feature-box">
+						<picture>
+							<source media="(min-width: 992px)" srcset="images/pinewood-500.jpg">
+							<source media="(min-width: 500px)" srcset="images/pinewood-750.jpg">
+							<source media="(max-width: 499px)" srcset="images/pinewood-500.jpg">
+							<img src="images/pinewood-750.jpg" class="img-responsive" alt="Pinewood Social bowling alley" data-toggle="modal" data-target="#project2">
+						</picture>
+						<h3 class="text-uppercase">Personal Web Site</h3>
+						<p><a href="http://dkmullen.com">dkmullen.com</a></p>
+					</div>
+					<div class="col-md-4 feature-box">
+						<picture>
+							<source media="(min-width: 992px)" srcset="images/sculptures-500.jpg">
+							<source media="(min-width: 500px)" srcset="images/sculptures-750.jpg">
+							<source media="(max-width: 499px)" srcset="images/sculptures-500.jpg">
+							<img src="images/sculptures-750.jpg" class="img-responsive" alt="Wire sculptures of faces" data-toggle="modal" data-target="#project3">
+						</picture>
+						<h3 class="text-uppercase">Linked-In Profile</h3>
+						<p><a href="http://www.linkedin.com/in/dkmullen">linkedin.com/in/dkmullen</a></p>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<!-- Modal - creates a slide-in window of more info-->
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-uppercase" id="myModalLabel-1">Church Web Site</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/mhcc-750.jpg" alt="Three crosses at sunrise">
+						<p>This is a responsive web site I built for my church. It uses the consumer-facing Weebly platform. I took this photo at the church in Kingston, Tennessee.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-uppercase" id="myModalLabel-2">My Personal Site</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/pinewood-750.jpg" alt="Pinewood Social bowling alley">
+						<p>This is a responsive web site I built which contains my resume. It uses the simple HTML and CSS I learned before starting this class. I took this photo at Pinewood Social in Nashville.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-3" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-uppercase" id="myModalLabel-3">My LinkedIn Profile</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/sculptures-750.jpg" alt="Wire sculptures of faces">
+						<p>This is just a link to my (under-developed) LinkedIn profile. I took the photo at the Botanical Gardens in Nashville.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

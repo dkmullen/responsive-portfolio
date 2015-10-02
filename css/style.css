@@ -1,0 +1,58 @@
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}  /* To add a FontAwesone character as my logo */
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #264c71;
+	font-weight: 300;
+}
+
+/* Header */
+
+.logo {    
+	font-size: 6em;
+}
+/* my font-awesome logo! */
+
+.title-super {
+	font-size: 60px;
+	font-weight: 100;
+}
+hr {
+    border: none;  /* styles the h rule under the title */
+    height: 3px;
+    background-color: #acb1aa; /* Modern Browsers */
+}
+
+/* Content */
+.text-muted {
+	color: #acb1aa;
+}
+
+.featured-work {
+	margin-top: 10px; /* Adds separation from picture above */
+}
+.feature-box {
+	margin-bottom: 35px; /* Adds separation between these items when
+				displayed in one column on smaller screens */
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+	.title {
+		text-align: center;   /* overrides the Bootstrap alignment... */
+	}
+	.logo {                 /* ...to make things look better as viewport shrinks*/
+		text-align: center;
+	}
+}
+@media screen and (max-width: 520px) {
+	.title-super {
+		font-size: 45px;  /* to fit title better on small screen */
+	}
+
+}
